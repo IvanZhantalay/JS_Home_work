@@ -10,14 +10,11 @@
     <script>
         let first = prompt("Введите первое число","");
         let second = prompt("Введите второе число","");
-               
-        let firstArr = Array.from(first);
-        let secondArr = Array.from(second);
 
-        firstArr[1] = second[1];
-        secondArr[1] = first[1];
+        let tempF = first.charAt(0)+second.charAt(1)+first.charAt(2)
+        let tempS = second.charAt(1)+first.charAt(1)+second.charAt(2)
 
-        alert(`Цифры в ваших значених заменены, результат = ${firstArr.join('')}, ${secondArr.join('')}`);   
+        alert(`Введенные вами числа ${first} и ${second} \nЦифры в ваших значених заменены, результат = ${tempF}, ${tempS}`);   
 
     </script>
     
