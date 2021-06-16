@@ -9,12 +9,11 @@
 <body>
     <script>
         let value = prompt("Введите 4-значное число",""); 
-        let Arr = Array.from(value);
-        
-        let sum = parseInt(Arr[0]) + parseInt(Arr[2]);
-        let diff = parseInt(Arr[1]) - parseInt(Arr[3]);
 
-         alert(`Ваше число ${value} \n Сумма первого и третьего числа равна ${sum}, Разность второго и четвертого равна ${diff}`);   
+        let sum = parseInt(value.charAt(0)) + parseInt(value.charAt(2));
+        let diff = parseInt(value.charAt(1)) - parseInt(value.charAt(3));
+
+        alert(`Ваше число ${value} \n Сумма первого и третьего числа равна ${sum}, Разность второго и четвертого равна ${diff}`);   
 
     </script>
     
