@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task X</title>
+</head>
+<body>
+    <pre>
+        Задание:
+        Запросите у пользователя число. Выведите все числа в обратном порядке от введенного пользователем значения до 1. Используйте для решения рекурсию.
+
+    
+    </pre>
+    <script>
+
+let value = +prompt('введите число', 5);
+
+function countDown(counter) {
+        counter--;
+        console.log(counter);
+
+        if (counter != 1) {
+            countDown(counter);
+        }
+    }
+
+    countDown(value);
+
+        
+    </script>
+</body>
+</html>
